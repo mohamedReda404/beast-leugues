@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43462CD3-E6CF-4D27-B468-EDF0038314D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp8</RootNamespace>
+    <AssemblyName>WindowsFormsApp8</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bundesliga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bundesliga.Designer.cs">
+      <DependentUpon>Bundesliga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Egyptian_premier_league.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Egyptian_premier_league.Designer.cs">
+      <DependentUpon>Egyptian_premier_league.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laliga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laliga.Designer.cs">
+      <DependentUpon>Laliga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leagues_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leagues_form.Designer.cs">
+      <DependentUpon>leagues_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ligue_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ligue_1.Designer.cs">
+      <DependentUpon>Ligue_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="premier_league.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="premier_league.Designer.cs">
+      <DependentUpon>premier_league.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serie_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serie_A.Designer.cs">
+      <DependentUpon>Serie_A.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bundesliga.resx">
+      <DependentUpon>Bundesliga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laliga.resx">
+      <DependentUpon>Laliga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leagues_form.resx">
+      <DependentUpon>leagues_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ligue_1.resx">
+      <DependentUpon>Ligue_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="premier_league.resx">
+      <DependentUpon>premier_league.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Serie_A.resx">
+      <DependentUpon>Serie_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lega-Serie-A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ligue-1-Uber-Eats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\584d86b2367b6a13e54477d5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210719092337!Epl110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-12-16 at 3.02.03 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP 3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP 4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP 5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_2-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_2-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_3-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP_4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ismaily_SC_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Masry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\شعار_النادي_الأهلي_المصري.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox3.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox4.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox5.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox1.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ro_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ro_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ro_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ro_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psg-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saint_etienne-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcellia-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brosia-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburg-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monchengladbach-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stuttgart-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bayern-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.28.11_5a1854ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.33.25_dfe46b10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.33.30_26e2326f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.37.57_2ce4f55f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.37.57_bdd32cac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-17 في 21.27.24_c305b5eb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Masry-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\شعار_نادي_الزمالك_المصري.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-ismaily-sc-egyptian-premier-league-petrojet-sc-enppi-sc-相机logo-egypt-world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\اجمل-خلفيات-رياضية-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 20.58.06_44973728.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIFA-WORLD-CUP-HEROES-RETURN-TO-ACTION-WITH-LALIGA-SERIE-A-LIGUE-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98-093807-how-european-top-leagues-ranked_700x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 23.04.16_e2c39886.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 21.08.38_9204b4d9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 23.21.22_200b0217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 21.29.00_e89dad43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\صورة واتساب بتاريخ 2023-12-19 في 21.24.53_2f32aab7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
